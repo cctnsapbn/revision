@@ -8,7 +8,8 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving the Artifacts..."
-                    archiveArtifacts artifacts: 'target/java-tomcat-maven-example.war', followSymlinks: false
+                    archiveArtifacts artifacts: 'java-tomcat-maven-example.war'
+                    
                 }
             }
         }
